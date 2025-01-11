@@ -1,0 +1,60 @@
+<!-- Cyrus Amalan -->
+<!-- camalan@ucsc.edu -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Draw and Perform Vector Operations</title>
+</head>
+
+<body onload="main()">
+    <canvas id="asg0" width="400" height="400" style="border:1px solid #000;">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <br>
+    <!-- Input fields for v1 coordinates -->
+    <label for="xcoord">v1: x</label>
+    <input type="text" id="xcoord" name="xcoord">
+    <label for="ycoord">y</label>
+    <input type="text" id="ycoord" name="ycoord">
+
+    <br>
+    <!-- Input fields for v2 coordinates -->
+    <label for="xcoord2">v2: x</label>
+    <input type="text" id="xcoord2" name="xcoord2">
+    <label for="ycoord2">y</label>
+    <input type="text" id="ycoord2" name="ycoord2">
+
+    <br>
+    <!-- Button for drawing vectors -->
+    <button onclick="handleDrawEvent()">Draw</button>
+
+    <br><br>
+    <!-- Selector for operations -->
+    <label for="opt">Operation:</label>
+    <select id="opt">
+        <option value="Add">Add</option>
+        <option value="Subtract">Subtract</option>
+        <option value="Multiply">Multiply</option>
+        <option value="Divide">Divide</option>
+        <option value="Magnitude">Magnitude</option>
+        <option value="Normalize">Normalize</option>
+        <option value="AngleBetween">Angle Between</option>
+        <option value="Area">Area</option>
+    </select>
+
+    <!-- Input for scalar -->
+    <label for="scalar">Scalar:</label>
+    <input type="text" id="scalar" name="scalar">
+
+    <br>
+    <!-- Button for performing operations -->
+    <button onclick="handleDrawOperationEvent()">Draw</button>
+
+    <!-- Include the JavaScript file -->
+    <script src="asg0.js"></script>
+</body>
+</html>
